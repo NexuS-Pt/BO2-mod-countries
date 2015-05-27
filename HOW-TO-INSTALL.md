@@ -19,3 +19,9 @@ table_email = "Email"
 table_status = "Status"
 table_sel = "Sel."
 ```
+
+3 - Add this code to your backoffice **header** file:
+
+``include "class/class.country.php";``
+
+4 - Import the **prefix_countries.sql** file to your Data Base
