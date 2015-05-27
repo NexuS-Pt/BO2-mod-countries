@@ -1,10 +1,10 @@
 # HOW TO INSTALL
 
-1. Add this code to your backoffice **includes.php** file:
+1 - Add this code to your backoffice **includes.php** file:
 
 ``case "logout": include "modules/logout/logout.php"; break;``
 
-2. Add this code to your backoffice **language (eg.: en.ini)** file:
+2 - Add this code to your backoffice **language (eg.: en.ini)** file:
 
 ```
 [mod_country]
