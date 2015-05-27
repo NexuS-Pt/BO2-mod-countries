@@ -4,7 +4,15 @@
 
 ``case "logout": include "modules/logout/logout.php"; break;``
 
-2 - Add this code to your backoffice **language (eg.: en.ini)** file:
+2 - Add this code to backoffice > modules > menu > **menu.php** file:
+
+``<a href="{c2r-path-bo}/0/country/">{c2r-menu-country}</a>``
+
+3 - Add this code to your backoffice > backoffice.php file, to array in line 137:
+
+``"{c2r-menu-country}"``
+
+4 - Add this code to your backoffice **language (eg.: en.ini)** file:
 
 ```
 [mod_country]
@@ -20,8 +28,14 @@ table_status = "Status"
 table_sel = "Sel."
 ```
 
-3 - Add this code to your backoffice **header** file:
+4-1 - In item **[menu]**:
+
+``menu_country = "Countries"``
+
+!IMPORTATNT! Verify the position of the point 3, need to be the same.
+
+5 - Add this code to your backoffice **header** file:
 
 ``include "class/class.country.php";``
 
-4 - Import the **prefix_countries.sql** file to your Data Base
+6 - Import the **prefix_countries.sql** file to your Data Base
