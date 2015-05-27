@@ -7,6 +7,7 @@
 2. Add this code to your backoffice **language (eg.: en.ini)** file:
 
 > [mod_country]
+
 > add_title = "Add Country"
 > edit_title = "Edit Country"
 > delete_title = "Delete Country"
